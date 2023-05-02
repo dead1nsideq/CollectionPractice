@@ -140,7 +140,6 @@ public class TestCollections {
         // todo Получить список всех слов по алфавиту без повторов
         List<String> result = readAllWordsFromFileToList();
         result = result.stream().map(String::toLowerCase).distinct().sorted(String.CASE_INSENSITIVE_ORDER).toList();
-        result.forEach(System.out::println);
         assertEquals("alice", result.get(5));
         assertEquals("all", result.get(6));
         assertEquals("without", result.get(134));
