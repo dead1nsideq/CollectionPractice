@@ -105,7 +105,6 @@ public class TestCollections {
     void testReadAllWordsFromFileToList() throws IOException {
         // todo прочитать все строки, разбить на слова и записать в коллекцию
         List<String> words = readAllWordsFromFileToList();
-        words.forEach(System.out::println);
         assertEquals(257, words.size());
     }
 
